@@ -1,24 +1,13 @@
-# README
+# JPL Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### **Process for creating blog entry feature test and feature**
 
-Things you may want to cover:
+- Visit Root Page
+- Click on new blog entry
+- Fill in title
+- Fill in body
+- Create blog entry
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Expectations*
+- Blog entry has been created
+- Blogs path
