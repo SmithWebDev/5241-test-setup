@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'hirb', '~> 0.7.3'
 gem 'pry', '~> 0.12.2'
 gem 'pry-byebug', '~> 3.7'
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'jquery-rails'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
