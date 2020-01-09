@@ -1,5 +1,87 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
-header
-  margin-bottom: 60px
+$primary-color: #4F1271
+$secondary-color: #783F8E
+$accent-color: #E3A8FF
+
+body
+  padding-top: 80px
+  background: #e1e1e1
+  color: #64103f
+
+
+// Navbar Styling
+.navbar
+  border-radius: 0
+  background: $primary-color
+  padding-bottom: 20px
+
+.navbar-inverse
+  border: $primary-color
+  & .navbar-brand
+    padding-top: 25px
+    font-size: 150%
+    font-weight: bold
+    color: #ffffff
+    &:hover
+      color: $accent-color
+  & .navbar-nav
+    padding-top: 10px
+    padding-right: 20px
+    & li > a
+      font-weight: bold
+      font-size: 130%
+      color: #ffffff
+      &:hover
+        color: $accent-color
+
+// Form Styling
+.page-heading, div > label
+  color: $primary-color
+
+
+// Listing Articles Styling
+.article-title
+  font-weight: bold
+  font-size: 2.5em
+  margin-bottom: 0.8em
+  padding-left: 0.7em
+
+.article-body
+  font-size: 1.5em
+  padding-left: 1.2em
+  color: $primary-color
+
+.article-detail
+  margin-top: 20px
+  color: #0000ff
+
+.author
+  color: $primary-color
+  padding-left: 25px
+
+// Article Show view styling
+.article-detail-title
+  font-size: 3em
+  margin-bottom: 40px
+
+.article-show-body
+  font-size: 1.5em
+  padding-left: 0
+  margin-top: 15px
+
+.edit-delete
+  margin-top: 20px
+
+// Sign up -- Sign In
+.sign-link a
+  color: $primary-color
+
+// Devise Error Messages
+#error_explanation
+  background-color: #f2dede
+  color: #a94442
+  text-align: left
+  padding: 5px 20px
+  margin-bottom: 30px

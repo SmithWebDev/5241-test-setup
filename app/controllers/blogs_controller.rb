@@ -12,8 +12,9 @@ class BlogsController < ApplicationController
       flash[:success] = "Blog Entry has been created"
       redirect_to blogs_path
     else
-      flash[:danger] = "Blog entry has not been created"
+      flash.now[:danger] = "Blog entry has not been created"
       render :new
+
     end
   end
   def edit
