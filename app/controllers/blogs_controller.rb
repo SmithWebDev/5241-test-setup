@@ -8,9 +8,13 @@ class BlogsController < ApplicationController
 
   def create
     @blog = Blog.new(blog_params)
-    @blog.save
-    flash[:success] = "Blog Entry has been created"
-    redirect_to blogs_path
+    if @blog.save
+      flash[:success] = "Blog Entry has been created"
+      redirect_to blogs_path
+    else
+      flash[:danger] = "Blog entry has not been created"
+      render :new
+    end
   end
   def edit
 
