@@ -19,11 +19,22 @@ class BlogsController < ApplicationController
     end
   end
   def edit
-
+    @blog = Blog.find(params[:id])
   end
 
   def show
     @blog = Blog.find(params[:id])
+  end
+
+  def update
+    @blog = Blog.find(params[:id])
+    if @blog.update(blog_params)
+      flash[:success] = "Blog Entry has been updated"
+      redirect_to @blog
+    else
+      flash.now[:danger] = "Blog Entry has not been updated"
+      render :edit
+    end
   end
 
   protected

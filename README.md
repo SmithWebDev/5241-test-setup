@@ -31,3 +31,12 @@ Project consisting of multiple pages, 2 layouts. Features include ability to blo
 
 *Expectations*
 - Expect blog entry title and body to be present
+
+### **Editing/ Updating articles feature test**
+- Create branch
+- Select article to display
+
+- Input Updated Article Information
+
+*Expectations*
+- Expect updated article title and body to be present
