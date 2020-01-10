@@ -1,0 +1,5 @@
+<article class="detail-blog">
+  <h1 class="blog-detail-title"> <%= @blog.title %></h1>
+  <div class="glyphicon glyphicon-calendar" id="blog-date"> <%= @blog.created_at.strftime("%b %d %Y") %></div>
+  <div class="blog body"> <%= @blog.body %></div>
+</article>

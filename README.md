@@ -22,3 +22,12 @@ Project consisting of multiple pages, 2 layouts. Features include ability to blo
 *Expectations*
 - Expect both blog entry titles and bodies to be present
 - Expect both blog entry titles and bodies not to be present
+
+### **Showing blog entries feature test**
+- Create branch
+- Create 1 blog entry to display
+
+- Show the blog entry title and details
+
+*Expectations*
+- Expect blog entry title and body to be present
