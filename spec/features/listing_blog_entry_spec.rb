@@ -18,6 +18,24 @@ RSpec.feature "Listing Blog Entries" do
     expect(page).to have_link(@blog1.title)
     expect(page).to have_link(@blog2.title)
 
+  end
+
+  scenario "A user has no blog entries" do
+    Blog.delete_all
+
+    visit '/'
+
+    expect(page).not_to have_content(@blog1.title)
+    expect(page).not_to have_content(@blog1.body)
+    expect(page).not_to have_content(@blog2.title)
+    expect(page).not_to have_content(@blog2.body)
+    expect(page).not_to have_link(@blog1.title)
+    expect(page).not_to have_link(@blog2.title)
+
+    within("h1#no-blog_entries") do
+      expect(page).to have_content("No Blog Entries Created")
+    end
+
 
   end
 end
