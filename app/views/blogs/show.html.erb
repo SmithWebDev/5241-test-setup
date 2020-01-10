@@ -3,5 +3,8 @@
   <div class="glyphicon glyphicon-calendar" id="blog-date"> <%= @blog.created_at.strftime("%b %d %Y") %></div>
   <div class="blog body"> <%= @blog.body %></div>
 
-  <%= link_to  "Edit Blog Entry", edit_blog_path(@blog), class: "btn btn-warning btn-lg" %>
+  <div class="edit-delete">
+    <%= link_to  "Edit Blog Entry", edit_blog_path(@blog), class: "btn btn-warning btn-lg" %>
+    <%= link_to  "Delete Entry", blog_path(@blog),method: :delete, data: {confirm: "Are you sure you want to delete article?"}, class: "btn btn-danger btn-lg btn-space" %>
+  </div>
 </article>

@@ -37,6 +37,14 @@ class BlogsController < ApplicationController
     end
   end
 
+  def destroy
+    @blog = Blog.find(params[:id])
+    if @blog.destroy
+      flash[:success] = "Blog Entry has been deleted"
+      redirect_to blogs_path
+    end
+  end
+
   protected
 
     def resource_not_found

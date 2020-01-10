@@ -32,11 +32,21 @@ Project consisting of multiple pages, 2 layouts. Features include ability to blo
 *Expectations*
 - Expect blog entry title and body to be present
 
-### **Editing/ Updating articles feature test**
+### **Editing/ Updating blog entry feature test**
 - Create branch
-- Select article to display
+- Select blog entry to display
 
-- Input Updated Article Information
+- Input Updated Blog Entry Information
 
 *Expectations*
-- Expect updated article title and body to be present
+- Expect updated blog entry title and body to be present
+
+### **Deleting blog entry feature test**
+- Create branch
+- Select an blog entry to display
+
+- Create delete button for blog entry removal
+
+*Expectations*
+- Expect blog entry to be removed
+- Expect message stating that the blog entry has been removed
