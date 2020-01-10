@@ -26,6 +26,14 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
   end
 
+  protected
+
+    def resource_not_found
+      message = "The blog you are looking for could not be found"
+      flash[:alert] = message
+      redirect_to root_path
+    end
+
   private
 
     def blog_params
