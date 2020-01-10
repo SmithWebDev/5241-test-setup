@@ -1,1 +1,12 @@
-<%= link_to  "New Blog Entry", new_blog_path %>
+<%= link_to  "New Blog Entry", new_blog_path, class: "btn btn-default btn-lg", id: "New-Blog_Entry-btn" %>
+
+<% @blogs.each do |b| %>
+  <div class="well well-lg">
+    <div class="blog-title">
+      <%= link_to b.title, blog_path(b) %>
+    </div>
+    <div class="blog-body">
+      <%= truncate(b.body, length: 500) %>
+    </div>
+  </div>
+<% end %>
