@@ -1,6 +1,7 @@
 # JPL Project
 Project consisting of multiple pages, 2 layouts. Features include ability to blog and ability to update tracked data. Utilizing Rspec, Capybara, and Cucumber for testing.
 
+# Blog Feature Tests
 ### **Process for creating blog entry feature test and feature**
 
 - Visit Root Page
@@ -50,3 +51,20 @@ Project consisting of multiple pages, 2 layouts. Features include ability to blo
 *Expectations*
 - Expect blog entry to be removed
 - Expect message stating that the blog entry has been removed
+
+# User Feature Test
+
+## Sign Up
+### **User Sign-Up**
+- Create branch
+- Visit root
+- click on sign-up link
+- email
+- password
+- password confirmation
+
+- sign-up
+
+### **Invalid User Sign-Up
+
+- do an invalid sign-up and ensure that it fails
