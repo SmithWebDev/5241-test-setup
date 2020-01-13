@@ -63,7 +63,7 @@ Project consisting of multiple pages, 2 layouts. Features include ability to blo
 - password
 - password confirmation
 
-- sign-up
+- click sign-up link
 
 ### **Invalid User Sign-Up
 
